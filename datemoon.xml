@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs title="Date et Heure"
+        author="Jay MOULIN"
+        author_affiliation="Jay MOULIN"
+        author_location="Paris, France"
+        author_email="jaymoulin@gmail.com"
+        screenshot="http://jaymoulin.googlepages.com/datemoonscreen.png"
+        thumbnail="http://www.google.fr/ig/modules/datetime-thm.png"
+        category="tools"
+        description="Ajoutez une horloge en francais ainsi que la phase de la lune et la fete a souhaiter sur votre page et affichez-la dans la couleur de votre choix."
+        render_inline="optional" height="136" scaling="false">
+        <Locale messages="http://www.google.com/ig/modules/datetime_v2_content/ALL_ALL.xml"/>
+        <Locale lang="en" messages="http://www.google.com/ig/modules/datetime_v2_content/en_ALL.xml"/>
+        <Locale lang="ar" messages="http://www.google.com/ig/modules/datetime_v2_content/ar_ALL.xml" language_direction="rtl"/>
+        <Locale lang="bg" messages="http://www.google.com/ig/modules/datetime_v2_content/bg_ALL.xml"/>
+        <Locale lang="ca" messages="http://www.google.com/ig/modules/datetime_v2_content/ca_ALL.xml"/>
+        <Locale lang="cs" messages="http://www.google.com/ig/modules/datetime_v2_content/cs_ALL.xml"/>
+        <Locale lang="da" messages="http://www.google.com/ig/modules/datetime_v2_content/da_ALL.xml"/>
+        <Locale lang="de" messages="http://www.google.com/ig/modules/datetime_v2_content/de_ALL.xml"/>
+        <Locale lang="el" messages="http://www.google.com/ig/modules/datetime_v2_content/el_ALL.xml"/>
+        <Locale lang="en-gb" messages="http://www.google.com/ig/modules/datetime_v2_content/en-gb_ALL.xml"/>
+        <Locale lang="es" messages="http://www.google.com/ig/modules/datetime_v2_content/es_ALL.xml"/>
+        <Locale lang="et" messages="http://www.google.com/ig/modules/datetime_v2_content/et_ALL.xml"/>
+        <Locale lang="fi" messages="http://www.google.com/ig/modules/datetime_v2_content/fi_ALL.xml"/>
+        <Locale lang="fil" messages="http://www.google.com/ig/modules/datetime_v2_content/fil_ALL.xml"/>
+        <Locale lang="fr" messages="http://www.google.com/ig/modules/datetime_v2_content/fr_ALL.xml"/>
+        <Locale lang="he" messages="http://www.google.com/ig/modules/datetime_v2_content/he_ALL.xml" language_direction="rtl"/>
+        <Locale lang="hi" messages="http://www.google.com/ig/modules/datetime_v2_content/hi_ALL.xml"/>
+        <Locale lang="hr" messages="http://www.google.com/ig/modules/datetime_v2_content/hr_ALL.xml"/>
+        <Locale lang="hu" messages="http://www.google.com/ig/modules/datetime_v2_content/hu_ALL.xml"/>
+        <Locale lang="hy" messages="http://www.google.com/ig/modules/datetime_v2_content/hy_ALL.xml"/>
+        <Locale lang="id" messages="http://www.google.com/ig/modules/datetime_v2_content/id_ALL.xml"/>
+        <Locale lang="is" messages="http://www.google.com/ig/modules/datetime_v2_content/is_ALL.xml"/>
+        <Locale lang="it" messages="http://www.google.com/ig/modules/datetime_v2_content/it_ALL.xml"/>
+        <Locale lang="iw" messages="http://www.google.com/ig/modules/datetime_v2_content/he_ALL.xml" language_direction="rtl"/>
+        <Locale lang="ja" messages="http://www.google.com/ig/modules/datetime_v2_content/ja_ALL.xml"/>
+        <Locale lang="ko" messages="http://www.google.com/ig/modules/datetime_v2_content/ko_ALL.xml"/>
+        <Locale lang="lt" messages="http://www.google.com/ig/modules/datetime_v2_content/lt_ALL.xml"/>
+        <Locale lang="lv" messages="http://www.google.com/ig/modules/datetime_v2_content/lv_ALL.xml"/>
+        <Locale lang="nl" messages="http://www.google.com/ig/modules/datetime_v2_content/nl_ALL.xml"/>
+        <Locale lang="no" messages="http://www.google.com/ig/modules/datetime_v2_content/no_ALL.xml"/>
+        <Locale lang="pl" messages="http://www.google.com/ig/modules/datetime_v2_content/pl_ALL.xml"/>
+        <Locale lang="pt-br" messages="http://www.google.com/ig/modules/datetime_v2_content/pt-br_ALL.xml"/>
+        <Locale lang="pt-pt" messages="http://www.google.com/ig/modules/datetime_v2_content/pt-pt_ALL.xml"/>
+        <Locale lang="ro" messages="http://www.google.com/ig/modules/datetime_v2_content/ro_ALL.xml"/>
+        <Locale lang="ru" messages="http://www.google.com/ig/modules/datetime_v2_content/ru_ALL.xml"/>
+        <Locale lang="sk" messages="http://www.google.com/ig/modules/datetime_v2_content/sk_ALL.xml"/>
+        <Locale lang="sl" messages="http://www.google.com/ig/modules/datetime_v2_content/sl_ALL.xml"/>
+        <Locale lang="sr" messages="http://www.google.com/ig/modules/datetime_v2_content/sr_ALL.xml"/>
+        <Locale lang="sv" messages="http://www.google.com/ig/modules/datetime_v2_content/sv_ALL.xml"/>
+        <Locale lang="th" messages="http://www.google.com/ig/modules/datetime_v2_content/th_ALL.xml"/>
+        <Locale lang="tr" messages="http://www.google.com/ig/modules/datetime_v2_content/tr_ALL.xml"/>
+        <Locale lang="uk" messages="http://www.google.com/ig/modules/datetime_v2_content/uk_ALL.xml"/>
+        <Locale lang="vi" messages="http://www.google.com/ig/modules/datetime_v2_content/vi_ALL.xml"/>
+        <Locale lang="zh-cn" messages="http://www.google.com/ig/modules/datetime_v2_content/zh-cn_ALL.xml"/>
+        <Locale lang="zh-tw" messages="http://www.google.com/ig/modules/datetime_v2_content/zh-tw_ALL.xml"/>
+    </ModulePrefs>
+    <UserPref name="color" datatype="enum" default_value="blue" display_name="Couleur" >
+        <EnumValue value="blue" display_value="Bleu" />
+        <EnumValue value="green" display_value="Vert" />
+        <EnumValue value="orange" display_value="Orange" />
+
+        <EnumValue value="pink" display_value="Rose" />
+        <EnumValue value="purple" display_value="Violet" />
+        <EnumValue value="red" display_value="Rouge" />
+        <EnumValue value="yellow" display_value="Jaune" />
+    </UserPref>
+    <Content type="html"><![CDATA[
+
+        <table id="gdt_main___MODULE_ID__" width="100%" height="136" border="0" cellpadding="0" cellspacing="0" style="font-family: Arial, Helvetica, sans-serif; color:#fff;">
+            <tr>
+                <td style="width: 12px;">
+                    <div style="position: relative; width: 12px; height: 136px; overflow: hidden; border: 0px; margin: 0px; padding: 0px;">
+                        <div id="gdt___BIDI_START_EDGE_____MODULE_ID__" style="position: absolute; __BIDI_START_EDGE__: 0px; top: -136px; width: 24px; height: 272px;"></div>
+                    </div>
+                </td>
+                <td valign="middle" id="gdt_b_clock___MODULE_ID__" style="width: 82px;">
+                    <div style="float: __BIDI_START_EDGE__; top: -272px; border: 0px; margin: 0px; padding: 0px; width: 82px; height: 112px;">
+                        <div style="position: relative; width: 82px; height: 112px; overflow: hidden; margin: 0px;">
+                            <div id="gdt_clock___MODULE_ID__" style="position: absolute; left: 0px; top: 0px; width: 1080px; height: 832px; margin-top: 15px;margin-left: 0px;"></div>
+                            <div id="gdt_hands___MODULE_ID__" style="position: relative; __BIDI_START_EDGE__: -5px; top: 11px; width: 90px; height: 90px; overflow: hidden;">
+                                <div id="gdt_hands_m___MODULE_ID__" style="position: absolute; left: 0px; top: -382px; width: 1080px; height: 832px;"></div>
+                                <div id="gdt_hands_h___MODULE_ID__" style="position: absolute; left: 0px; top: -112px; width: 1080px; height: 832px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td valign="middle" id="gdt_b_date___MODULE_ID__" style="padding: 0px 0px; overflow: hidden; height: 136px; width: 106px;">
+                    <div style="float: __BIDI_START_EDGE__; padding-__BIDI_START_EDGE__: 5px; padding-__BIDI_END_EDGE__: 10px;">
+                        <div id="gdt_day___MODULE_ID__" style="font-size: 16px; font-weight: bold;">__MSG_sun__</div>
+                        <div id="gdt_date___MODULE_ID__" style="font-size: 42px; font-weight: bold;">1</div>
+                    </div>
+                    <div id="gdt_month___MODULE_ID__" style="font-size: 20px; font-weight: bold;">__MSG_jan__</div>
+                </td>
+                <td valign="middle" id="gdt_cal___MODULE_ID__" style="overflow: hidden; height: 136px; display: none;"></td>
+                <td style="width: 12px;">
+                    <div style="position: relative; width: 12px; height: 136px; overflow: hidden; border: 0px; margin: 0px; padding: 0px;">
+                        <div id="gdt___BIDI_END_EDGE_____MODULE_ID__" style="position: absolute; __BIDI_END_EDGE__: 0px; top: -136px; width: 24px; height: 272px;"></div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <script type="text/javascript">
+
+            function showSaint(day)
+            {
+            var ctime = new Date();
+            var pmonth = ctime.getMonth();
+            var pday = ctime.getDate();
+            if (day <= 1)
+            day = 1;
+            if (day >= 31)
+            day = 31;
+            var str = getSaint(day, pmonth+1);
+            _gel('gdt_saint___MODULE_ID__').innerHTML = getSaint(((str == "undefined") ? pday : day), pmonth+1);
+
+            if (this.is_ie5 || this.is_ie6) {
+            fixIeBkgPng2('gdt_clock___MODULE_ID__', CalcPhase(day), 'no-repeat');
+            } else {
+            setBkgPng2('gdt_clock___MODULE_ID__', CalcPhase(day), 'no-repeat');
+            }
+            }
+
+            function fixIeBkgPng2(elId, imgSrc, repeat) {
+            _gel(elId).style.filter = 'progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src=\''+imgSrc+'\')';
+            _gel(elId).style.backgroundImage = 'none';
+            }
+
+            function setBkgPng2(elId, imgSrc, repeat) {
+            _gel(elId).style.backgroundImage = 'url(\'' + imgSrc + '\')';
+            _gel(elId).style.backgroundRepeat = repeat;
+            }
+
+
+            function getSaint(day, month)
+            {
+            var fetes = new Array();
+            fetes['1-1'] = "Jour de l'an";
+            fetes['1-2'] = "Basile";
+            fetes['1-3'] = "Geneviève";
+            fetes['1-4'] = "Odilon";
+            fetes['1-5'] = "Edouard";
+            fetes['1-6'] = "Mélaine";
+            fetes['1-7'] = "Raymond";
+            fetes['1-8'] = "Lucien";
+            fetes['1-9'] = "Alix";
+            fetes['1-10'] = "Guillaume";
+            fetes['1-11'] = "Pauline";
+            fetes['1-12'] = "Tatiana";
+            fetes['1-13'] = "Yvette";
+            fetes['1-14'] = "Nina";
+            fetes['1-15'] = "Rémi";
+            fetes['1-16'] = "Marcel";
+            fetes['1-17'] = "Roseline";
+            fetes['1-18'] = "Prisca";
+            fetes['1-19'] = "Marius";
+            fetes['1-20'] = "Sébastien";
+            fetes['1-21'] = "Agnès";
+            fetes['1-22'] = "Vincent";
+            fetes['1-23'] = "Banard";
+            fetes['1-24'] = "François de Sales";
+            fetes['1-25'] = "Conversion de Paul";
+            fetes['1-26'] = "Paule";
+            fetes['1-27'] = "Angèle";
+            fetes['1-28'] = "Thomas d'Aquin";
+            fetes['1-29'] = "Gildas";
+            fetes['1-30'] = "Martine";
+            fetes['1-31'] = "Marcelle";
+            fetes['2-1'] = "Ella";
+            fetes['2-2'] = "Présentation";
+            fetes['2-3'] = "Blaise";
+            fetes['2-4'] = "Véronique";
+            fetes['2-5'] = "Agathe";
+            fetes['2-6'] = "Gaston";
+            fetes['2-7'] = "Eugènie";
+            fetes['2-8'] = "Jacqueline";
+            fetes['2-9'] = "Apolline";
+            fetes['2-10'] = "Arnaud";
+            fetes['2-11'] = "Notre Dame de Lourdes";
+            fetes['2-12'] = "Félix";
+            fetes['2-13'] = "Béatrice";
+            fetes['2-14'] = "Valentin";
+            fetes['2-15'] = "Claude";
+            fetes['2-16'] = "Julienne";
+            fetes['2-17'] = "Alexis";
+            fetes['2-18'] = "Bernadette";
+            fetes['2-19'] = "Gabin";
+            fetes['2-20'] = "Aimée";
+            fetes['2-21'] = "Damien";
+            fetes['2-22'] = "Isabelle";
+            fetes['2-23'] = "Lazare";
+            fetes['2-24'] = "Modeste";
+            fetes['2-25'] = "Roméo";
+            fetes['2-26'] = "Nestor";
+            fetes['2-27'] = "Honorine";
+            fetes['2-28'] = "Romain";
+            fetes['2-29'] = "Auguste";
+            fetes['3-1'] = "Aubin";
+            fetes['3-2'] = "Charles le Bon";
+            fetes['3-3'] = "Guénolé";
+            fetes['3-4'] = "Casimir";
+            fetes['3-5'] = "Olive";
+            fetes['3-6'] = "Colette";
+            fetes['3-7'] = "Félicité";
+            fetes['3-8'] = "Jean de Dieu";
+            fetes['3-9'] = "Françoise";
+            fetes['3-10'] = "Vivien";
+            fetes['3-11'] = "Rosine";
+            fetes['3-12'] = "Justine";
+            fetes['3-13'] = "Rodrigue";
+            fetes['3-14'] = "Mathilde";
+            fetes['3-15'] = "Louise";
+            fetes['3-16'] = "Bénédicte";
+            fetes['3-17'] = "Patrice";
+            fetes['3-18'] = "Cyrille";
+            fetes['3-19'] = "Joseph";
+            fetes['3-20'] = "Printemps";
+            fetes['3-21'] = "Clémence";
+            fetes['3-22'] = "Léa";
+            fetes['3-23'] = "Victorien";
+            fetes['3-24'] = "Catherine";
+            fetes['3-25'] = "Annonciation";
+            fetes['3-26'] = "Larissa";
+            fetes['3-27'] = "Habib";
+            fetes['3-28'] = "Gontran";
+            fetes['3-29'] = "Gwladys";
+            fetes['3-30'] = "Amédée";
+            fetes['3-31'] = "Benjamin";
+            fetes['4-1'] = "Hugues";
+            fetes['4-2'] = "Sandrine";
+            fetes['4-3'] = "Richard";
+            fetes['4-4'] = "Isidore";
+            fetes['4-5'] = "Irène";
+            fetes['4-6'] = "Marcellin";
+            fetes['4-7'] = "Jean-Baptiste de la Salle";
+            fetes['4-8'] = "Julie";
+            fetes['4-9'] = "Gautier";
+            fetes['4-10'] = "Fulbert";
+            fetes['4-11'] = "Stanislas";
+            fetes['4-12'] = "Jules";
+            fetes['4-13'] = "Ida";
+            fetes['4-14'] = "Maxime";
+            fetes['4-15'] = "Paterne";
+            fetes['4-16'] = "Benoît-Joseph";
+            fetes['4-17'] = "Anicet";
+            fetes['4-18'] = "Parfait";
+            fetes['4-19'] = "Emma";
+            fetes['4-20'] = "Odette";
+            fetes['4-21'] = "Anselme";
+            fetes['4-22'] = "Alexandre";
+            fetes['4-23'] = "Georges";
+            fetes['4-24'] = "Fidèle";
+            fetes['4-25'] = "Marc";
+            fetes['4-26'] = "Alida";
+            fetes['4-27'] = "Zita";
+            fetes['4-28'] = "Valérie";
+            fetes['4-29'] = "Catherine de Sienne";
+            fetes['4-30'] = "Robert";
+            fetes['5-1'] = "Fête du travail";
+            fetes['5-2'] = "Boris";
+            fetes['5-3'] = "Philippe - Jacques";
+            fetes['5-4'] = "Sylvain";
+            fetes['5-5'] = "Judith";
+            fetes['5-6'] = "Prudence";
+            fetes['5-7'] = "Gisèle";
+            fetes['5-8'] = "Armistice 1945";
+            fetes['5-9'] = "Pacôme";
+            fetes['5-10'] = "Solange";
+            fetes['5-11'] = "Estelle";
+            fetes['5-12'] = "Achille";
+            fetes['5-13'] = "Rolande";
+            fetes['5-14'] = "Matthias";
+            fetes['5-15'] = "Denise";
+            fetes['5-16'] = "Honoré";
+            fetes['5-17'] = "Pascal";
+            fetes['5-18'] = "Eric";
+            fetes['5-19'] = "Yves";
+            fetes['5-20'] = "Bernardin";
+            fetes['5-21'] = "Constantin";
+            fetes['5-22'] = "Emile";
+            fetes['5-23'] = "Didier";
+            fetes['5-24'] = "Donatien";
+            fetes['5-25'] = "Sophie";
+            fetes['5-26'] = "Bérenger";
+            fetes['5-27'] = "Augustin";
+            fetes['5-28'] = "Germain";
+            fetes['5-29'] = "Aymar";
+            fetes['5-30'] = "Ferdinand";
+            fetes['5-31'] = "Visitation de la Sainte Vierge";
+            fetes['6-1'] = "Justin";
+            fetes['6-2'] = "Blandine";
+            fetes['6-3'] = "Kévin";
+            fetes['6-4'] = "Clotilde";
+            fetes['6-5'] = "Igor";
+            fetes['6-6'] = "Norbert";
+            fetes['6-7'] = "Gilbert";
+            fetes['6-8'] = "Médard";
+            fetes['6-9'] = "Diane";
+            fetes['6-10'] = "Landry";
+            fetes['6-11'] = "Barnabé";
+            fetes['6-12'] = "Guy";
+            fetes['6-13'] = "Antoine de Padoue";
+            fetes['6-14'] = "Elisée";
+            fetes['6-15'] = "Germaine";
+            fetes['6-16'] = "Jean François Régis";
+            fetes['6-17'] = "Hervé";
+            fetes['6-18'] = "Léonce";
+            fetes['6-19'] = "Romuald";
+            fetes['6-20'] = "Silvère";
+            fetes['6-21'] = "Eté";
+            fetes['6-22'] = "Alban";
+            fetes['6-23'] = "Audrey";
+            fetes['6-24'] = "Jean-Baptiste";
+            fetes['6-25'] = "Prosper";
+            fetes['6-26'] = "Anthelme";
+            fetes['6-27'] = "Fernand";
+            fetes['6-28'] = "Irénée";
+            fetes['6-29'] = "Pierre - Paul";
+            fetes['6-30'] = "Martial";
+            fetes['7-1'] = "Thierry";
+            fetes['7-2'] = "Martinien";
+            fetes['7-3'] = "Thomas";
+            fetes['7-4'] = "Florent";
+            fetes['7-5'] = "Antoine";
+            fetes['7-6'] = "Mariette";
+            fetes['7-7'] = "Raoul";
+            fetes['7-8'] = "Thibault";
+            fetes['7-9'] = "Amandine";
+            fetes['7-10'] = "Ulrich";
+            fetes['7-11'] = "Benoît";
+            fetes['7-12'] = "Olivier";
+            fetes['7-13'] = "Henri et Joël";
+            fetes['7-14'] = "Fête Nationale";
+            fetes['7-15'] = "Donald";
+            fetes['7-16'] = "Notre Dame du Mont Carmel";
+            fetes['7-17'] = "Charlotte";
+            fetes['7-18'] = "Frédéric";
+            fetes['7-19'] = "Arsène";
+            fetes['7-20'] = "Marina";
+            fetes['7-21'] = "Victor";
+            fetes['7-22'] = "Marie Madeleine";
+            fetes['7-23'] = "Brigitte";
+            fetes['7-24'] = "Christine";
+            fetes['7-25'] = "Jacques";
+            fetes['7-26'] = "Anne et Joachin";
+            fetes['7-27'] = "Nathalie";
+            fetes['7-28'] = "Samson";
+            fetes['7-29'] = "Marthe";
+            fetes['7-30'] = "Juliette";
+            fetes['7-31'] = "Ignace de Loyola";
+            fetes['8-1'] = "Alphonse";
+            fetes['8-2'] = "Julien Eymard";
+            fetes['8-3'] = "Lydie";
+            fetes['8-4'] = "Jean-Marie Vianney";
+            fetes['8-5'] = "Abel";
+            fetes['8-6'] = "Transfiguration";
+            fetes['8-7'] = "Gaétan";
+            fetes['8-8'] = "Dominique";
+            fetes['8-9'] = "Amour";
+            fetes['8-10'] = "Laurent";
+            fetes['8-11'] = "Claire";
+            fetes['8-12'] = "Clarisse";
+            fetes['8-13'] = "Hippolyte";
+            fetes['8-14'] = "Evrard";
+            fetes['8-15'] = "Assomption";
+            fetes['8-16'] = "Armel";
+            fetes['8-17'] = "Hyacinthe";
+            fetes['8-18'] = "Hélène";
+            fetes['8-19'] = "Jean Eudes";
+            fetes['8-20'] = "Bernard";
+            fetes['8-21'] = "Christophe";
+            fetes['8-22'] = "Fabrice";
+            fetes['8-23'] = "Rose de Lima";
+            fetes['8-24'] = "Barthélémy";
+            fetes['8-25'] = "Louis";
+            fetes['8-26'] = "Natacha";
+            fetes['8-27'] = "Monique";
+            fetes['8-28'] = "Augustin";
+            fetes['8-29'] = "Sabine";
+            fetes['8-30'] = "Fiacre";
+            fetes['8-31'] = "Aristide";
+            fetes['9-1'] = "Gilles";
+            fetes['9-2'] = "Ingrid";
+            fetes['9-3'] = "Grégoire";
+            fetes['9-4'] = "Rosalie";
+            fetes['9-5'] = "Raïssa";
+            fetes['9-6'] = "Bertrand";
+            fetes['9-7'] = "Reine";
+            fetes['9-8'] = "Nativité";
+            fetes['9-9'] = "Alain";
+            fetes['9-10'] = "Inès";
+            fetes['9-11'] = "Adelphe";
+            fetes['9-12'] = "Apollinaire";
+            fetes['9-13'] = "Aimé";
+            fetes['9-14'] = "Croix Glorieuse";
+            fetes['9-15'] = "Roland";
+            fetes['9-16'] = "Edith";
+            fetes['9-17'] = "Renaud";
+            fetes['9-18'] = "Nadège";
+            fetes['9-19'] = "Emilie";
+            fetes['9-20'] = "Davy";
+            fetes['9-21'] = "Matthieu";
+            fetes['9-22'] = "Maurice";
+            fetes['9-23'] = "Automne";
+            fetes['9-24'] = "Thècle";
+            fetes['9-25'] = "Hermann";
+            fetes['9-26'] = "Côme et Damien";
+            fetes['9-27'] = "Vincent de Paul";
+            fetes['9-28'] = "Venceslas";
+            fetes['9-29'] = "Michel - Gabriel - Raphaël";
+            fetes['9-30'] = "Jérôme";
+            fetes['10-1'] = "Thérèse de l'Enfant Jésus";
+            fetes['10-2'] = "Léger";
+            fetes['10-3'] = "Gérard";
+            fetes['10-4'] = "François d'Assise";
+            fetes['10-5'] = "Fleur";
+            fetes['10-6'] = "Bruno";
+            fetes['10-7'] = "Serge";
+            fetes['10-8'] = "Pélagie";
+            fetes['10-9'] = "Denis";
+            fetes['10-10'] = "Ghislain";
+            fetes['10-11'] = "Firmin";
+            fetes['10-12'] = "Wilfried";
+            fetes['10-13'] = "Géraud";
+            fetes['10-14'] = "Juste";
+            fetes['10-15'] = "Thérèse d'Avila";
+            fetes['10-16'] = "Edwige";
+            fetes['10-17'] = "Baudoin";
+            fetes['10-18'] = "Luc";
+            fetes['10-19'] = "René";
+            fetes['10-20'] = "Adeline";
+            fetes['10-21'] = "Céline";
+            fetes['10-22'] = "Elodie";
+            fetes['10-23'] = "Jean de Capistran";
+            fetes['10-24'] = "Florentin";
+            fetes['10-25'] = "Crépin";
+            fetes['10-26'] = "Dimitri";
+            fetes['10-27'] = "Emeline";
+            fetes['10-28'] = "Jude";
+            fetes['10-29'] = "Narcisse";
+            fetes['10-30'] = "Bienvenue";
+            fetes['10-31'] = "Quentin";
+            fetes['11-1'] = "Toussaint";
+            fetes['11-2'] = "Défunts";
+            fetes['11-3'] = "Hubert";
+            fetes['11-4'] = "Charles";
+            fetes['11-5'] = "Sylvie";
+            fetes['11-6'] = "Bertille";
+            fetes['11-7'] = "Carine";
+            fetes['11-8'] = "Geoffroy";
+            fetes['11-9'] = "Théodore";
+            fetes['11-10'] = "Léon";
+            fetes['11-11'] = "Armistice 1918";
+            fetes['11-12'] = "Christian";
+            fetes['11-13'] = "Brice";
+            fetes['11-14'] = "Sidoine";
+            fetes['11-15'] = "Albert";
+            fetes['11-16'] = "Marguerite";
+            fetes['11-17'] = "Elisabeth";
+            fetes['11-18'] = "Aude";
+            fetes['11-19'] = "Tanguy";
+            fetes['11-20'] = "Edmond";
+            fetes['11-21'] = "Présence de Marie";
+            fetes['11-22'] = "Cécile";
+            fetes['11-23'] = "Clément";
+            fetes['11-24'] = "Flora";
+            fetes['11-25'] = "Catherine";
+            fetes['11-26'] = "Delphine";
+            fetes['11-27'] = "Sévrin";
+            fetes['11-28'] = "Jacques de la Marche";
+            fetes['11-29'] = "Saturnin";
+            fetes['11-30'] = "André";
+            fetes['12-1'] = "Florence";
+            fetes['12-2'] = "Viviane";
+            fetes['12-3'] = "François Xavier";
+            fetes['12-4'] = "Barbara";
+            fetes['12-5'] = "Gérald";
+            fetes['12-6'] = "Nicolas";
+            fetes['12-7'] = "Ambroise";
+            fetes['12-8'] = "Immaculée Conception";
+            fetes['12-9'] = "Pierre Fourier";
+            fetes['12-10'] = "Romaric";
+            fetes['12-11'] = "Daniel";
+            fetes['12-12'] = "Jeanne-Françoise de Chantal";
+            fetes['12-13'] = "Lucie";
+            fetes['12-14'] = "Odile";
+            fetes['12-15'] = "Ninon";
+            fetes['12-16'] = "Alice";
+            fetes['12-17'] = "Gaël";
+            fetes['12-18'] = "Gatien";
+            fetes['12-19'] = "Urbain";
+            fetes['12-20'] = "Théophile";
+            fetes['12-21'] = "Hivers";
+            fetes['12-22'] = "Françoise Xavière";
+            fetes['12-23'] = "Armand";
+            fetes['12-24'] = "Adèle";
+            fetes['12-25'] = "Noël";
+            fetes['12-26'] = "Etienne";
+            fetes['12-27'] = "Jean";
+            fetes['12-28'] = "Innocents";
+            fetes['12-29'] = "David";
+            fetes['12-30'] = "Roger";
+            fetes['12-31'] = "Sylvestre";
+            return (fetes[month+'-'+day]);
+            }
+
+            function CalcPhase(day) {
+            DateRef = new Date(2007, 9, 26, 4, 52, 0);//date de référence : 26 octobre 2007 à 04h52m il y a eu une pleine lune
+            Today = new Date(); //date du jour
+            if (typeof(day) == 'undefined')
+            day = Today.getDate();
+            Aujourdui = new Date(Today.getFullYear(), Today.getMonth(), day, 23, 59, 59); //date du jour
+            msDiff = ((Aujourdui.getTime() - DateRef.getTime()) / 1000) / 85048.1;
+            phase = Math.ceil(msDiff % 30); //on calcule le pourcentage de la phase
+            if (phase == 0)
+            phase = 30;
+            ImagePhase = 'http://images.very-utile.com/phases_lune/lune_';
+            if (Math.floor(phase / 10) == 0)
+            ImagePhase += '0';
+            ImagePhase += phase+'.gif';
+            return(ImagePhase);
+            }
+
+            function GDT___MODULE_ID__() {
+            this.prefs = new _IG_Prefs(__MODULE_ID__);
+            this.clockColor = (this.prefs.getString('color')) ? this.prefs.getString('color') : 'blue';
+            this.dispDay = -1;
+
+            // Static globals.
+            this.monthsArray = new Array("Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Decembre");
+            this.daysArray = new Array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi");
+
+            // Browser detection.
+            this.agt = navigator.userAgent.toLowerCase();
+            this.is_ie = (this.agt.indexOf("msie")!= -1 && document.all && this.agt.indexOf("opera") == -1);
+            this.is_ie5 = this.is_ie && (this.agt.indexOf("msie 5") != -1);
+            this.is_ie6 = this.is_ie && (this.agt.indexOf("msie 6") != -1);
+            this.is_ie7 = this.is_ie && (this.agt.indexOf("msie 7") != -1);
+
+            /**
+            * Writes an element's html for browsers with getElementById()
+            */
+            this.writeElement = function(eltId, str) {
+            _gel(eltId).innerHTML = str;
+            }
+
+            /**
+            * Changes the clipping (position) of an element's background image for browsers with getElementById()
+            */
+            this.updateXY = function(eltId, xCoord, yCoord) {
+            _gel(eltId).style.left = '' + (-xCoord) + 'px';
+            _gel(eltId).style.top = '' + (-yCoord) + 'px';
+            }
+
+            /**
+            * Decide whether there is enough room to show the calendar.
+            */
+            this.toggleCalDisp = function() {
+            if (_gel('gdt_main___MODULE_ID__').clientWidth > 315) {
+            _gel('gdt_cal___MODULE_ID__').style.display = 'block';
+            } else {
+            _gel('gdt_cal___MODULE_ID__').style.display = 'none';
+            }
+            }
+
+            /**
+            * Save the background image.
+            */
+            this.setBkgPng = function (elId, imgSrc, repeat) {
+            _gel(elId).style.backgroundImage = 'url(\'' + imgSrc + '\')';
+            _gel(elId).style.backgroundRepeat = repeat;
+            }
+
+            /**
+            * Apply a filter instead of saving the background image.
+            */
+            this.fixIeBkgPng = function (elId, imgSrc, repeat) {
+            _gel(elId).style.filter = 'progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src=\''+imgSrc+'\')';
+            _gel(elId).style.backgroundImage = 'none';
+            }
+
+            /**
+            * Updates the clock to the current time.
+            */
+            this.upClock = function() {
+            var ctime = new Date();
+            var phr = ctime.getHours();
+            var pmin = ctime.getMinutes();
+            var pday = ctime.getDay();
+            var pmonth = ctime.getMonth();
+            var pdate = ctime.getDate();
+
+            // scale clock to 0 - 11
+            if (phr >= 12) phr -= 12;
+
+            // adjust background positions for hands
+            var hhFrame = (phr * 3 + Math.round(pmin / 20)) % 36;
+            this.updateXY('gdt_hands_h___MODULE_ID__', 90 * (hhFrame % 12), 112 + 90 * Math.floor(hhFrame / 12));
+            this.updateXY('gdt_hands_m___MODULE_ID__', 90 * (pmin % 12), 382 + 90 * Math.floor(pmin / 12));
+
+            // update date if necessary
+            if (pdate != this.dispDay) {
+            this.writeElement('gdt_day___MODULE_ID__', this.daysArray[pday]);
+            this.writeElement('gdt_month___MODULE_ID__', this.monthsArray[pmonth]);
+            this.writeElement('gdt_date___MODULE_ID__', pdate);
+
+            if (this.is_ie5 || this.is_ie6) {
+            this.fixIeBkgPng('gdt_clock___MODULE_ID__', CalcPhase(), 'no-repeat');
+            } else {
+            this.setBkgPng('gdt_clock___MODULE_ID__', CalcPhase(), 'no-repeat');
+            }
+
+            this.drawCal(pday, pmonth, pdate, ctime.getYear());
+            this.dispDay = pdate;
+            }
+            }
+
+            /**
+            * draw calendar
+            */
+            this.drawCal = function (day, month, date, year) {
+            // Each of these should consist of exactly 1 character
+            var days_of_week = ['D', 'L', 'M', 'M', 'J', 'V', 'S'];
+            var num_days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+            var result = '<table style="margin-top: 3px;" cellspacing="1" cellpadding="2" border="0"><tr>';
+                    var num_days = num_days_in_month[month];
+                    if (month == 1 && year % 4 == 0) {
+                    if (year % 100 != 0 || year % 400 == 0) {
+                    num_days = 29;
+                    }
+                    }
+
+                    for (var i = 0; i < 7; i++) {
+                    result += '<td style="font-size: 9px; color:#ffffff; border-bottom: 1px dotted #eeeeee;">' +
+                        days_of_week[i] + '</td>';
+                    }
+                    result += '</tr>';
+
+                var curr_day = 1;
+                var starting_day = ((day - date % 7 + 1) + 7 )% 7;
+                for (var i = 0; i < 6; i++) {
+                result += '<tr>';
+                    for (var j = 0; j < 7; j++) {
+                    var style = 'font-size: 9px; color: #eeeeee;';
+                    var content = curr_day;
+                    if ((i == 0 && j < starting_day) || curr_day > num_days) {
+                    content = '&nbsp;';
+                    } else {
+                    if (curr_day == date) {
+                    style += ' border: 1px solid #eeeeee; color: #ffffff; font-weight: bold;';
+                    }
+                    curr_day++;
+                    }
+                    result += '<td style="' + style + '"onmouseover="showSaint('+(curr_day - 1)+');" onmouseout="showSaint('+date+');">' + content + '</td>';
+                    }
+                    result += '</tr>';
+                }
+                result += '</table><div id="gdt_saint___MODULE_ID__" style="postion:absolute;margin-top:-10px;font-size:12px;height:20px;font-weight:bold;overflow:hidden;"></div>';
+            _gel('gdt_cal___MODULE_ID__').innerHTML = result;
+            showSaint(date);
+            }
+
+            /**
+            * Sets up the clock to update every minute.
+            */
+            this.startInterval = function() {
+            window.setInterval('GDT___MODULE_ID___handle.upClock()',60000);
+            this.upClock();
+            }
+
+            this.setImages = function() {
+            if (this.is_ie5 || this.is_ie6) {
+            this.fixIeBkgPng('gdt_clock___MODULE_ID__', CalcPhase(), 'no-repeat');
+            this.fixIeBkgPng('gdt_left___MODULE_ID__', '/ig/modules/datetime_content/background-' + this.clockColor + '.png', 'no-repeat');
+            this.fixIeBkgPng('gdt_right___MODULE_ID__', '/ig/modules/datetime_content/background-' + this.clockColor + '.png', 'no-repeat');
+            this.setBkgPng('gdt_b_clock___MODULE_ID__', '/ig/modules/datetime_content/background-' + this.clockColor + '.png', 'repeat-x');
+            this.setBkgPng('gdt_b_date___MODULE_ID__', '/ig/modules/datetime_content/background-' + this.clockColor + '.png', 'repeat-x');
+            this.setBkgPng('gdt_cal___MODULE_ID__', '/ig/modules/datetime_content/background-' + this.clockColor + '.png', 'repeat-x');
+            this.fixIeBkgPng('gdt_hands_m___MODULE_ID__', '/ig/modules/datetime_content/clock-and-hands.png', 'no-repeat');
+            this.fixIeBkgPng('gdt_hands_h___MODULE_ID__', '/ig/modules/datetime_content/clock-and-hands.png', 'no-repeat');
+            } else {
+            this.setBkgPng('gdt_clock___MODULE_ID__', CalcPhase(), 'no-repeat');
+            this.setBkgPng('gdt_left___MODULE_ID__', '/ig/modules/datetime_content/background-' + this.clockColor + '.png', 'no-repeat');
+            this.setBkgPng('gdt_right___MODULE_ID__', '/ig/modules/datetime_content/background-' + this.clockColor + '.png', 'no-repeat');
+            this.setBkgPng('gdt_b_clock___MODULE_ID__', '/ig/modules/datetime_content/background-' + this.clockColor + '.png', 'repeat-x');
+            this.setBkgPng('gdt_b_date___MODULE_ID__', '/ig/modules/datetime_content/background-' + this.clockColor + '.png', 'repeat-x');
+            this.setBkgPng('gdt_cal___MODULE_ID__', '/ig/modules/datetime_content/background-' + this.clockColor + '.png', 'repeat-x');
+            this.setBkgPng('gdt_hands_m___MODULE_ID__', '/ig/modules/datetime_content/clock-and-hands.png', 'no-repeat');
+            this.setBkgPng('gdt_hands_h___MODULE_ID__', '/ig/modules/datetime_content/clock-and-hands.png', 'no-repeat');
+            }
+            }
+
+            /**
+            * Sets up the clock, and tries its best to sync with the system clock to update at the right time.
+            */
+            this.main = function() {
+            // address differences in relatively positioned elements in different browsers
+            if (!this.is_ie5 && !this.is_ie6 && !this.is_ie7) {
+            _gel('gdt_hands___MODULE_ID__').style.position = 'relative';
+            }
+            this.setImages();
+            if (window.addEventListener) {
+            window.addEventListener('resize', GDT___MODULE_ID___handle.toggleCalDisp, false);
+            window.addEventListener('load', GDT___MODULE_ID___handle.toggleCalDisp, false);
+            } else if (window.attachEvent) {
+            window.attachEvent('onresize', GDT___MODULE_ID___handle.toggleCalDisp);
+            window.attachEvent('onload', GDT___MODULE_ID___handle.toggleCalDisp);
+            }
+            this.upClock();
+            window.setTimeout('GDT___MODULE_ID___handle.startInterval()', (60 - new Date().getSeconds()) * 1000 + 5);
+            for (i = 1; i <= 30; i++)
+            {
+            pic1= new Image(100,25);
+            ImagePhase = 'http://images.very-utile.com/phases_lune/lune_';
+            if (Math.floor(i / 10) == 0)
+            ImagePhase += '0';
+            ImagePhase += i +'.gif';
+            pic1.src=ImagePhase;
+            }
+            }
+            }
+
+            var GDT___MODULE_ID___handle = new GDT___MODULE_ID__();
+
+            _IG_RegisterOnloadHandler(function() {
+            GDT___MODULE_ID___handle.main();
+            });
+
+        </script>
+
+        ]]></Content>
+</Module>
